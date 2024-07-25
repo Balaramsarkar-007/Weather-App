@@ -1,4 +1,4 @@
-import SearchBox from './searchBox'
+import SearchBox from './SearchBox'
 import InfoBox from './infoBox'
 import { useState } from 'react'
 
