@@ -25,6 +25,9 @@ export default function SearchBox({ updateInfo }) {
                 feelsLike: jsonResponse.main.feels_like,
                 weather: jsonResponse.weather[0].description,
             }
+
+            // Send notification using SuprSend
+            // await sendNotification('user_id', 'weather_update', result);
             return result;
         } catch (error) {
             throw error;
@@ -49,6 +52,7 @@ export default function SearchBox({ updateInfo }) {
     }
 
     return (
+
         <div style={{ textAlign: "center" }}>
             <h2>Search for Weather</h2>
             <form onSubmit={handleSubmit}>
